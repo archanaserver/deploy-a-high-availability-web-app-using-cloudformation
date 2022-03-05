@@ -1,4 +1,4 @@
-## Deploy a high-availability web app using CloudFormation(Udacity)
+## Deploy a high-availability web app using CloudFormation
 
 ### Project Overview
 
