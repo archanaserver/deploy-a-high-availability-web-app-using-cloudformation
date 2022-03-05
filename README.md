@@ -28,9 +28,11 @@ Now the task is to deploy the application, along with the necessary supporting s
   * Internet Gateway
   * NAT Gateways
 
-```$ scripts/create.sh webapp-network-stack network.yml network-params.json```
+```
+$ scripts/create.sh webapp-network-stack network.yml network-params.json
+```
 
-1. To create servers resources using cloudformation template which pulls source code from S3 bucket automatically while starting, run the below command. After exceuting it these are the resources created:
+2. To create servers resources using cloudformation template which pulls source code from S3 bucket automatically while starting, run the below command. After exceuting it these are the resources created:
   * Security Groups
   * IAM Role, Policy, Instance Profile
   * Launch configuration
@@ -38,6 +40,8 @@ Now the task is to deploy the application, along with the necessary supporting s
   * Load Balancer
   * Target Group
 
-```$ scripts/create.sh webapp-server-stack server.yml server-params.json```
+```
+$ scripts/create.sh webapp-server-stack server.yml server-params.json
+```
 
 Once the above steps are complete, you can find the URL of application in the outputs section of udagram-servers-stack CloudFormarion stack. Here is what it [looks like](https://github.com/archanaserver/deploy-a-high-availability-web-app-using-cloudformation/blob/master/workflow-screenshots/udagram-servers-stack-outputs.png).
